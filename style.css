@@ -1,0 +1,400 @@
+/* fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Volkhov:wght@400;700&display=swap');
+
+
+/* global css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg {
+    background-image: url(images/assets/Decore.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Volkhov', serif;
+}
+
+p {
+    color: #5e6282;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/* navbar css */
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    font-weight: 600;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 0 6px;
+    padding: 6px 16px;
+    list-style: none;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #212832;
+}
+
+.sign-btn {
+    border: 1px solid #212832;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.sign-btn:hover {
+    background-color: #F1A501;
+    color: aliceblue;
+    border: 1px solid #F1A501;
+}
+
+/* navbar css end*/
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.intro-text {
+    width: 70%;
+}
+
+.light-paragraph {
+    font-weight: 700;
+    color: #DF6951;
+}
+
+
+.intro-text h1 {
+    color: #181e4b;
+    font-size: 84px;
+    line-height: 1;
+}
+
+.intro-text p {
+    margin: 15px 0;
+}
+
+.bottom-details {
+    padding-bottom: 15px;
+}
+
+.highlight {
+    position: relative;
+}
+
+.highlight::after {
+    content: url(images/assets/h2-underline.png);
+    position: absolute;
+    left: -15px;
+    top: 29px;
+    z-index: -1;
+}
+
+.intro-img img {
+    width: 100%;
+}
+
+.primary-btn {
+    background-color: #F1A501;
+    color: aliceblue;
+    border: 1px solid #F1A501;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* hero section end */
+
+
+/* categories section */
+
+
+/* intro css */
+.section-intro {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.section-intro p {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-intro h2 {
+    font-size: 50px;
+    color: #14183e;
+}
+
+/* intro css end */
+
+/* categories */
+.bg-decor-category {
+    background-image: url(images/assets/bg-decor-1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.single-category {
+    cursor: pointer;
+    padding: 45px;
+    margin: 16px 10px;
+    border-radius: 36px;
+    width: 250px;
+    box-shadow: 0 30px 80px rgb(0, 0, 0, 0.02);
+    transition: all ease-in-out 0.5s;
+    text-align: center;
+}
+
+.single-category img {
+    width: 100px;
+    height: 100px;
+}
+
+.single-category:hover {
+    box-shadow: 0 100px 80px rgb(0, 0, 0, 0.1);
+}
+
+/* destination section */
+
+.destinations {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.single-destination {
+    margin: 10px 15px;
+    border-radius: 24px;
+    box-shadow: 0 30px 80px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.single-destination p {
+    padding: 0 16px 10px;
+}
+
+
+/* brands css */
+
+.brandings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    margin-top: 40px;
+}
+
+.single-brand {
+    filter: grayscale();
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.single-brand:hover {
+    filter: none;
+}
+
+/* subscription box css */
+.subscribe {
+    text-align: center;
+    background-image: url(images/assets/bg-decor-1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.subscribe .container {
+    padding: 80px;
+    border-radius: 20px;
+    background: #dfd7f9 url(images/assets/subscribe-decor-left.png) no-repeat bottom left;
+}
+
+.subscribe h2 {
+    width: 70%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-box {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.subscribe input {
+    padding: 15px 30px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+
+}
+
+.submit-btn {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F1A501;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* footer css */
+
+.footer-contents {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-tag {
+    text-align: center;
+}
+
+.footer-tag span {
+    color: #F1A501;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:1440px) {
+    .container {
+        width: 80%;
+    }
+
+    .menu-list {
+        display: none;
+    }
+}
+
+/* for tablets */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .destinations {
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+
+    .brandings {
+        flex-direction: column;
+    }
+}
+
+/* for mobiles */
+
+@media screen and (max-width: 425px) {
+    .footer-contents {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        max-width: 80%;
+    }
+
+    .intro-text h1 {
+        font-size: 50px;
+    }
+
+    .highlight::after {
+        left: -35px;
+    }
+    .subscribe .container {
+        padding: 22px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px){
+
+    .intro-text{
+        max-width: 89%;
+    }
+    .highlight::after {
+        left: -75px;
+    }
+    .subscribe .container {
+        padding: 13px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .highlight::after {
+        left: -118px;
+    }
+    .subscribe .container{
+        padding: 10px 0;
+    }
+
+    .submit-btn{
+        margin-top: 10px;
+    }
+}
