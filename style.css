@@ -374,6 +374,10 @@ section {
 
 
 }
+@media screen and (max-width: 415px){
+    .bg {
+        background-position: 93% 0;
+    }
 
 @media screen and (max-width: 375px){
     .bg {
@@ -393,6 +397,10 @@ section {
         margin-left: 5px;
     }
 }
+@media screen and (max-width: 350px){
+    .bg {
+        background-position: 90% 0;
+    }
 
 @media screen and (max-width: 320px){
 
