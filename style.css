@@ -363,25 +363,34 @@ section {
     }
 
     .highlight::after {
-        left: -35px;
+        left: -48px;
     }
     .subscribe .container {
         padding: 22px;
+    }
+    .destinations {
+        margin-left: 1px;
     }
 
 
 }
 
 @media screen and (max-width: 375px){
+    .bg {
+        background-position: 97% 0;
+    }
 
     .intro-text{
         max-width: 89%;
     }
     .highlight::after {
-        left: -75px;
+        left: -85px;
     }
     .subscribe .container {
         padding: 13px;
+    }
+    .destinations {
+        margin-left: 5px;
     }
 }
 
@@ -396,5 +405,11 @@ section {
 
     .submit-btn{
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 307px){
+    .bg {
+        background-position: 65% 0;
     }
 }
